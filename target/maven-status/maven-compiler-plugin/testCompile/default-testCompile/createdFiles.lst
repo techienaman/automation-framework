@@ -1,0 +1,6 @@
+com/vinsguru/util/Config.class
+com/vinsguru/util/JsonUtil.class
+com/vinsguru/test/flightreservation/FlightReservationTest.class
+com/vinsguru/test/vendorportal/VendorPortalTest.class
+com/vinsguru/test/AbstractTest.class
+com/vinsguru/util/ResourceLoader.class

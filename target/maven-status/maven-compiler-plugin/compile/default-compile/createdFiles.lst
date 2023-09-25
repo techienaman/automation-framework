@@ -1,0 +1,9 @@
+com/vinsguru/pages/vendorportal/DashboardPage.class
+com/vinsguru/pages/AbstractPage.class
+com/vinsguru/pages/flightreservation/FlightsSelectionPage.class
+com/vinsguru/pages/flightreservation/RegistrationConfirmationPage.class
+com/vinsguru/pages/vendorportal/model/VendorPortalTestData.class
+com/vinsguru/pages/flightreservation/RegistrationPage.class
+com/vinsguru/pages/flightreservation/FlightConfirmationPage.class
+com/vinsguru/pages/flightreservation/FlightSearchPage.class
+com/vinsguru/pages/vendorportal/LoginPage.class
