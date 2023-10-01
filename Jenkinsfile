@@ -10,7 +10,7 @@ pipeline{
 
         stage ("Build Image"){
             steps{
-               sh "docker build -t=-kummayan/selenium ."
+               sh "docker build -t=kummayan/selenium ."
             }
         }
         stage('Push Image'){
