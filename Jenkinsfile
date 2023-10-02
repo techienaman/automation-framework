@@ -4,22 +4,22 @@ pipeline{
     stages{
         stage("Build Jar"){
             steps{
-                sh "mvn clean package -DskipTests"
+                sh "mvn clean package -DskipTests
             }
         }
 
-        stage ("Build Image"){
+        stage ("Build Image){
             steps{
-               sh "docker build -t=kummayan/selenium ."
+               sh "docker build -t=-kummayan/selenium ."
             }
         }
         stage('Push Image'){
-        environment{
-        DOCKER_HUB=credentials("docker_hub_creds")
-        }
             steps{
-                sh 'docker login -u ${DOCKER_HUB_USR} -p ${DOCKER_HUB_PSW}'
-                sh "docker push kummayan/selenium"
+                DOCKER_HUB=credentials("docker_hub_creds")
+                sh "docker login -u ${DOCKER_HUB_USR} -p ${DOCKER_HUB_PSW}"
+                sh "docker push kummayan/selenium:latest"
+                sh "docker tag kummayank/selenium:latest kummayan/selenium:${BUILD_NUMBER}"
+                sh "docker push kummayan/selenium:${BUILD_NUMBER}"
             }
         }
     }
